@@ -1,0 +1,194 @@
+/* Global Styles */
+
+body {
+ /* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top, #FFFFFF 0%, #AD4848 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top, #FFFFFF 0%, #AD4848 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top, #FFFFFF 0%, #AD4848 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #FFFFFF), color-stop(1, #AD4848));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #AD4848 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom, #FFFFFF 0%, #AD4848 100%);
+
+	background-attachment: fixed;
+	font: 14px Calibri;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+#container{
+	margin: 0 auto;
+	width: 1024px;
+	text-align: left;
+}
+
+.table1 {
+	background-color: #BB1100;
+	margin: 0 auto;
+	cellspacing: 1;
+	cellpadding: 0;
+	border: outset;
+	width: 1024px;
+}
+
+th {
+	font:bold 12px arial;
+	color:#ffffff;
+	width: auto;
+	text-align: left;
+	}
+
+td {
+	font:12px arial;
+	color:#000000;
+	width: auto;
+	text-align: left;
+	}
+	
+hr { 
+	color: #EED9D9;
+	}
+	
+.header1 {
+	width: 300px;
+}
+
+.header2 {
+	width: 370px;
+}
+
+.header3 {
+	width: 100px;
+}
+	
+tr.even { 
+	background-color:#DECACA; 
+}
+
+tr.oneven { 
+	background-color:#EED9D9;
+}
+
+.red {
+	background-color:#903;
+}
+
+.orange {
+	background-color:#F90;
+}
+
+.green {
+	background-color:#060;
+}			
+	
+.previous-next {
+	margin: 20px 0 20px 0; /* boven rechts onder links */
+}
+
+a {
+	color: #000000;
+	text-decoration: none;
+	}
+	
+a:hover {
+	color: #000000;
+	text-decoration:underline;
+	}
+	
+/* Class Styles */
+
+.h1 {
+	font:14px arial;
+	color:#000000;
+	line-height:20px;
+	letter-spacing:.1em;
+	margin-top:10px;
+	text-align: center;
+}
+
+.h2 {
+	font:12px arial;
+	color:#000000;
+	line-height:20px;
+	letter-spacing:.1em;
+	margin-top:0px;
+	text-align: center;
+}
+
+.tooltip
+{
+  position: relative;
+  
+  cursor: help;
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  outline: none;
+}
+
+.tooltip span
+{
+  visibility: hidden;
+  position: absolute; 
+  bottom: 30px;
+  left: 50%;
+  z-index: 999;
+  width: 230px;
+  margin-left: -127px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  opacity: .9;
+  background-color: #ddd;                     
+  background-image: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));  
+  -moz-border-radius: 4px;
+  border-radius: 4px;  
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;  
+  text-shadow: 0 1px 0 rgba(255,255,255,.4); 
+}
+
+.tooltip:hover
+{
+  border: 0; /* IE6 fix */
+}
+
+.tooltip:hover span
+{
+  visibility: visible;
+}
+
+.tooltip span:before,
+.tooltip span:after
+{
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -8px;  
+  border-top: 8px solid #ddd;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;        
+  border-bottom: 0;  
+}
+
+.tooltip span:before
+{
+  border-top-color: #ccc;
+  bottom: -8px;
+}

@@ -1,0 +1,213 @@
+/* 
+ * lightIRC Style Sheet
+ * www.lightIRC.com
+ *
+ * Edit the CSS values and link the Style Sheet to the lightIRC application using the parameter "styleURL".
+ * Please contribute new styles back to the lightIRC project!
+ *
+ * Note: Don't use hyphens for CSS attributes. Write fontSize instead of font-size.
+ *
+ */
+
+/* Global settings */
+lightIRC {
+    fontFamily:Verdana;
+    background:transparent;
+}
+
+/* Make components a bit transparent for a nice look */
+TextArea, List, TextInput {
+	contentBackgroundAlpha:0.75;
+}
+
+/* Background gradient settings. Set both items to the same value if you want a solid background color */
+.backgroundGradientTop{
+color:#800000;
+}
+.backgroundGradientBottom{
+color:#000000;
+}
+/* Configures buttons */
+Button{
+cornerRadius:0;
+color:#800000;
+textRollOverColor:#555555;
+textSelectedColor:#333333;
+chromeColor:#897C7C;
+borderColor:#999;
+}
+/* Configures various texts */
+Text, Label{
+color:#444;
+}
+/* Configures popup windows */
+
+
+Panel{
+color:#444;
+backgroundColor:#ffffff;
+cornerRadius:0;
+backgroundAlpha:0.25;
+chromeColor:#e92322;
+borderColor:#800000;
+}
+TitleWindow{
+backgroundColor:#FFFFFF;
+cornerRadius:0;
+borderColor:#FFFFFF;
+chromeColor:#e92322;
+backgroundAlpha:0.25;
+color:#444;
+}
+/* Configures the user list and other list elements */
+List{
+contentBackgroundColor:#FFFFFF;
+rollOverColor:#800000;
+selectionColor:#E0E8ED;
+borderColor:#999;
+
+paddingTop:5px;
+paddingBottom:4px;
+fontSize:12;
+fontWeight:bold;
+color:#444;
+}
+/* Configures the channel list popup and other DataGrid elements */
+DataGrid{
+contentBackgroundColor:#FFFFFF;
+rollOverColor:#c3d6e7;
+selectionColor:#b2c7d3;
+verticalGridLineColor:#999;
+borderColor:#999;
+color:#444;
+chromeColor:#f5f5f5;
+}
+/* Configures the main chat area */
+TextArea{
+contentBackgroundColor:#ffffff;
+borderColor:#999;
+}
+/* Scrollbar color for the TextArea */
+Scroller{
+chromeColor:#800000;
+}
+/* Configures the text input boxes and other TextInput elements*/
+TextInput{
+contentBackgroundColor:#ffffff;
+color:#444;
+borderColor:#444;
+chromeColor:#FFF;
+}
+/* Configures radio buttons */
+RadioButton{
+color:#FFF;
+}
+/* Configures checkboxes */
+CheckBox{
+color:#444444;
+textRollOverColor:#777;
+}
+/* Configures the menu */
+.menu{
+backgroundColor:#FFFFFF;
+borderColor:#999;
+borderAlpha:0.6;
+borderWeight:1;
+}
+/* Configures the button state for an active window */
+.buttonActiveWindow{
+chromeColor:#FFFFFF;
+color:#444444;
+textRollOverColor:#444444;
+textSelectedColor:#444444;
+borderColor:#999;
+}
+/* Configures the button state when the assigned window is not active */
+.buttonInactiveWindow{
+chromeColor:#FFFFFF;
+color:#444;
+borderColor:#999;
+}
+/* Configures the button state when receiving a new information message (join, part, quit, ...) in the assigned window */
+.buttonInactiveWindowInfo{
+color:#444444;
+borderColor:#999;
+chromeColor:#FFFFFF;
+}
+/* Configures the button state when receiving a new message in the assigned window */
+.buttonInactiveWindowMessage{
+color:#ff8c00;
+fontWeight:bold;
+chromeColor:#FFFFFF;
+borderColor:#999;
+}
+/* Configures the active state of the bold, underline and translation buttons */
+.buttonBoldActive, .buttonUnderlineActive, .buttonTranslationActive{
+color:#444444;
+borderColor:#999;
+chromeColor:#FFFFFF;
+}
+/* Configures links to other channels or to external URLs */
+.channelLink, .addressLink{
+color:#CC6633;
+textDecoration:underline;
+}
+/* Configures user names in the chat area */
+.userLink{
+color:#008000;
+textDecoration:none;
+fontWeight:bold;
+}
+.userSelfLink{
+color:#FF0000;
+textDecoration:none;
+fontWeight:bold;
+}
+/* Color of information messages like joins, parts, mode changes, ... */
+.infoLine{
+color:#808080;
+}
+/* Color of channel or query messages */
+.messageLine{
+color:#444;
+}
+/* Color of user number and topic above the channel area*/
+.channelHeader{
+color:#444;
+}
+.webcamPopup{
+backgroundColor:#FFFFFF;
+borderColor:#F60;
+chromeColor:#e92322;
+cornerRadius:4;
+horizontalAlign:center;
+horizontalGap:1;
+tabHeight:20;
+}
+
+.userListOperator {
+ 	color:#DF013A;
+        fontWeight:bold;
+}
+
+.userListAdministrator {
+ 	color:#00BFFF;
+        fontWeight:bold;
+}
+
+.userListHalfop {
+ 	color:#FE9A2E;
+        fontWeight:bold;
+}
+.userListVoice {
+    color:#04B431;
+    fontWeight:bold;
+}
+.userListOwner {
+    color:#800000;
+    fontWeight:bold;
+}
+
+.userListRegular {
+   color:#000000;
+}

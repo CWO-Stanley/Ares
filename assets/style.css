@@ -1,0 +1,28 @@
+#display{display: none;}   
+.body{
+        
+    color:#000;
+}
+.main{margin-top: 50px;}
+.comments-section{
+    background:#fff;
+    margin-top: 20px;
+    margin-bottom:130px
+}
+
+.navbar-fixed-bottom{display:none}
+.navbar-fixed-top{background:#fff;}
+a{color: #0275d8;}
+
+
+@media only screen and (max-width : 992px) {
+
+}
+
+@media (min-width: 992px) {
+   .comments-section{
+        margin-top: 90px;
+    }
+    .main{margin-top: 100px;}
+    .navbar-fixed-bottom{display:block}
+}
